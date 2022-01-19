@@ -6,7 +6,7 @@ import typescript from '@rollup/plugin-typescript'
 import json from 'rollup-plugin-json'
 import babel from '@rollup/plugin-babel'
 import filesize from 'rollup-plugin-filesize'
-// import { terser } from 'rollup-plugin-terser'
+import { terser } from 'rollup-plugin-terser'
 
 const pkg = require('./package.json')
 
@@ -40,7 +40,7 @@ export default {
       babelHelpers: 'bundled' // 开启体积优化
     }),
 
-    // terser(),
+    terser(),
 
     filesize(),
 

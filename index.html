@@ -9,6 +9,8 @@
   <body></body>
   <script src="./dist/package-template.umd.js"></script>
   <script>
-    console.log(packageTemplate)
+    packageTemplate.arrayEach([1, 3, 4], (item, i) => {
+      console.log(item, i, 'item, i')
+    })
   </script>
 </html>
